@@ -1,4 +1,4 @@
-import { Character } from "./character";
+import { Character } from "./classes/character.class";
 
 // Create a new Character:
 const character = new Character("Pepe", 12, 340);

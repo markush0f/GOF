@@ -1,5 +1,4 @@
-import {HouseBuilder } from "./House";
-
+import { HouseBuilder } from "./classes/HouseBuilder";
 const houseBuilder = new HouseBuilder();
 
 // Now, we create the house step by step
