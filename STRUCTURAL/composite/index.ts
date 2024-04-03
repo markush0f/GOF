@@ -1,6 +1,6 @@
-import { Circle } from "./classes/Circle";
-import { Triangle } from "./classes/Triangle";
-import { Drawing } from "./classes/Drawing";
+import { Circle } from "./classes/Circle.class";
+import { Drawing } from "./classes/Drawing.class";
+import { Triangle } from "./classes/Triangle.class";
 
 
 class TestCompositePattern {
