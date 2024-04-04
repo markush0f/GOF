@@ -1,23 +1,11 @@
-interface Mediator {
-    communicate(sender: Colleague, action: string): void;
-}
+import { Colleague } from "./classes/colleague.class";
+import { Ingredient } from "./classes/Ingredient.class";
+import { Mediator } from "./interfaces/mediator.interface";
 
-abstract class Colleague {
-    constructor(protected mediator: Mediator) {}
 
-    abstract action(action: string): void;
-}
 
-class Ingredient extends Colleague {
-    constructor(mediator: Mediator, private name: string) {
-        super(mediator);
-    }
 
-    action(action: string): void {
-        console.log(`${this.name} reacts to ${action}`);
-        this.mediator.communicate(this, action);
-    }
-}
+
 
 class SandwichMediator implements Mediator {
     communicate(sender: Colleague, action: string): void {

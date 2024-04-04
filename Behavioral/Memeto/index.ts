@@ -9,17 +9,9 @@ Client: This refers to the application or function that communicates with the sy
  */
 
 import { Past } from "./Classes/past.class";
-import { TextMemento } from "./Classes/text.memto";
 import { TextEditor } from "./Classes/texteditor.class";
 
 
-
-
-// Originator 
-
-
-
-// Client
 const editor = new TextEditor();
 const past = new Past();
 
@@ -27,16 +19,11 @@ past.addMemento(editor.createMemento());
 
 editor.setContent("Hello, ");
 past.addMemento(editor.createMemento());
-
 editor.setContent("World!");
 past.addMemento(editor.createMemento());
-
-
 editor.restoreFromMemento(past.getMemento(1));
 
 console.log(editor.getContent());
 
-
 editor.restoreFromMemento(past.getMemento(2));
-
 console.log(editor.getContent());
